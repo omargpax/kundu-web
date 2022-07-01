@@ -30,5 +30,18 @@ function carousel(){
     }
     x[ind-1].style.display="block";
     setTimeout(carousel,5000);
+}
 
+function socials(number){
+    switch(number){
+        case 1:
+            window.location.href="https://www.instagram.com/omargpax/";
+            break;
+        case 2:
+            window.location.href="https://www.instagram.com/omargpax/";
+            break;
+        case 3:
+            window.location.href="https://www.instagram.com/omargpax/";
+            break;
+    }
 }

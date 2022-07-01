@@ -226,6 +226,7 @@ main{
     transform: translateY(10px);
     color: #0960c4;
     transition: color .3s ease-in;
+    cursor: pointer;
 }
 .carrusel{
     width: 100%;
