@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,13 +12,14 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
     <script>
         AOS.init();
-      </script>
+    </script>
     <header>
 
-        <div class="container__header">	
+        <div class="container__header">
 
             <div class="logo">
                 <img src="media/logoHeader.png" alt="">
@@ -36,7 +38,7 @@
             </div>
             <i class="fa-solid fa-bars" id="icon_menu"></i>
             <div class="header__register">
-                <input type="button" class="btn__header-register" value="Portafolio">
+                <input type="button" class="btn__header-register" value="Portafolio" onclick="portafolio()">
             </div>
         </div>
 
@@ -45,15 +47,16 @@
     <main>
 
         <div class="cover">
-            
+
             <div class="text__information-cover">
                 <h1 data-aos="flip-up">¡La aventura comienza ahora!</h1>
 
-                <p data-aos="flip-down">Explora y explota tu creatividad por el arte y el diseño, utilizando la inteligencia procesable de cada
+                <p data-aos="flip-down">Explora y explota tu creatividad por el arte y el diseño, utilizando la
+                    inteligencia procesable de cada
                     evento digital para impactar positivamente en los resultados visuales.</p>
 
                 <div class="buttons__cover" data-aos="fade-left">
-                    <input type="button" class="btn__register-cover" value="Portafolio">
+                    <input type="button" class="btn__register-cover" value="Portafolio" onclick="portafolio()">
                     <input type="button" class="btn__readMore-cover" value="Leer más">
                 </div>
 
@@ -86,29 +89,35 @@
             </div>
         </div>
         <div class="socials" data-aos="fade-up">
-                <div class="social" >
-                        <div class="img" id="btn-social">
-                            <img src="media/Facebook_perspective_matte_s.png" alt="facebook" id="img-social">
-                            <h2 data-aos="flip-left">Facebook</h2>
-                        </div>
-                   
+            <div class="social">
+                <div class="img" id="btn-social">
+                    <img src="media/Facebook_perspective_matte_s.png" alt="facebook" id="img-social">
+                    <h2 data-aos="flip-left">Facebook</h2>
                 </div>
-                <div class="social" onclick="socials(2)">
-                    <div class="img" id="btn-social1"> 
-                        <img src="media/Instagram_perspective_matte_s.png" alt="instagram" id="img-social1" >
-                        <h2 data-aos="flip-left" id="txt-ig">Instagram</h2>
-                    </div>
-                    
+
+            </div>
+            <div class="social" onclick="socials(2)">
+                <div class="img" id="btn-social1">
+                    <img src="media/Instagram_perspective_matte_s.png" alt="instagram" id="img-social1">
+                    <h2 data-aos="flip-left" id="txt-ig">Instagram</h2>
                 </div>
-                <div class="social" >
-                   <div class="img" id="btn-social2">
+
+            </div>
+            <div class="social">
+                <div class="img" id="btn-social2">
                     <img src="media/Twitter_perspective_matte_s.png" alt="twitter" id="img-social2">
                     <h2 data-aos="flip-left">Twitter</h2>
-                   </div>
-                   
                 </div>
+
+            </div>
         </div>
     </main>
     <script src="js/script.js"></script>
+    <script type="text/JavaScript">
+        function portafolio(){
+            window.location.href="/portafolio.html";
+        }
+    </script>
 </body>
+
 </html>

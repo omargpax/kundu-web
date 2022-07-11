@@ -1,0 +1,140 @@
+.destacados{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+.title{
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 0px;
+}
+.title>hr,.title>h2{
+    margin: 0px;
+    padding: 0px;
+}
+
+.card{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.125);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+}
+.card:hover{
+    cursor: pointer;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.515);
+    transition: box-shadow .3s ease-in;
+    -webkit-transition: box-shadow .3s ease-in;
+    -moz-transition: box-shadow .3s ease-in;
+    -ms-transition: box-shadow .3s ease-in;
+    -o-transition: box-shadow .3s ease-in;
+}
+.card .card-info{
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 20%;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px 30px;
+    color: #ffff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.card .card-info span{
+    margin-right: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.card .card-info i{
+    margin-right: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.card .card-profile{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 0%;
+    border-radius: 10px;
+    right: 0;
+    left: 0;
+    border-radius: 0px 10px 10px 0px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.card .card-profile img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    object-position: center;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.card .card-profile h2{
+    color: #334454;
+    font-size: 1.2rem;
+}
+.card .card-profile p{
+    color: #a1b1bc;
+    font-size: 0.8rem;
+}
+
+.card .card-profile p b{
+    font-style: italic;
+}
+
+.card .card-profile p b:hover{
+    color: rgb(0, 119, 255);
+}
+
+
+@media (max-width: 1024px){
+    .destacados{
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+    }
+}
+@media (max-width: 600px){
+    .title{
+        display: none;
+    }
+    .destacados{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto; 
+    }
+}
