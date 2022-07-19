@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-ES">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,9 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/portafolio.css">
+    <link rel="stylesheet" href="css/cart.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="media/kundu.png">
 </head>
 
 <body>
@@ -22,87 +24,120 @@
 
         <div class="container__header">
 
-            <div class="logo" onclick="inicio()">
-                <img src="media/logoHeader.png" alt="">
+            <div class="logo" onclick="index()">
+                <img src="media/logoHeader.png" alt="logo">
             </div>
 
             <div class="menu">
                 <nav>
                     <ul>
-                        <li><a href="#">Productos</a></li>
+                        <li><a href="producto.html">Productos</a></li>
                         <li><a href="#">Tutoriales</a></li>
-                        <li><a href="https://omargpx.github.io/portafolio">Perfil</a></li>
-                        <li><a href="#">Recursos</a></li>
+                        <li><a href="https://omargpax.minisite.ai">Perfil</a></li>
                         <li><a href="https://omargpx.github.io/portafolio/info.html">Contactos</a></li>
+                        <li><a href="cart.html">
+                                <div class="cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <div id="cartAmount" class="cartAmount">0</div>
+                                </div>
+                            </a></li>
                     </ul>
                 </nav>
             </div>
             <i class="fa-solid fa-bars" id="icon_menu"></i>
             <div class="header__register">
-                <input type="button" class="btn__header-register" value="Portafolio">
+                <input type="button" class="btn__header-register" value="Portafolio" onclick="portafolio()">
             </div>
         </div>
 
     </header>
 
-    <div class="title">
-        <h2>Destacados</h2>
-        <hr color="#ddd">
-    </div>
-    <div class="destacados">
-        <div class="card" id="lock1">
-            <div class="card-info">
-                <span><i class="fas fa-eye">&nbsp 15</i></span>
-                <span><i class="fas fa-comment-alt">&nbsp 0</i></span>
-                <span><i class="fas fa-download">&nbsp 0</i></span>
+    <div class="content">
+        <div class="category">
+            <div class="title">
+                <h2>Destacados</h2>
             </div>
-            <div class="card-profile">
-                <img src="media/Omar.png" alt="perfil">
-                <div class="card-profile-text">
-                    <h2>Abstract Design</h2>
-                    <p>by <b>@omargpax</b></p>
+            <div class="destacados">
+                <a href="https://ibb.co/LJvdphP">
+                    <div class="card" id="lock1">
+                        <div class="card-info">
+                            <span><i class="fas fa-eye">&nbsp 15</i></span>
+                            <span><i class="fas fa-comment-alt">&nbsp 0</i></span>
+                            <span><i class="fas fa-download">&nbsp 0</i></span>
+                        </div>
+                        <div class="card-profile">
+                            <img src="media/Omar.png" alt="perfil">
+                            <div class="card-profile-text">
+                                <h2>Abstract Design</h2>
+                                <p>by <b>@omargpax</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://ibb.co/QMVT8Ny">
+                    <div class="card" id="lock2">
+                        <div class="card-info">
+                            <span><i class="fas fa-eye">&nbsp 32</i></span>
+                            <span><i class="fas fa-comment-alt">&nbsp 0</i></span>
+                            <span><i class="fas fa-download">&nbsp 0</i></span>
+                        </div>
+                        <div class="card-profile">
+                            <img src="media/Omar.png" alt="perfil">
+                            <div class="card-profile-text">
+                                <h2>Abstract Design</h2>
+                                <p>by <b>@omargpax</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="card" id="lock3">
+                    <div class="card-info">
+                        <span><i class="fas fa-eye">&nbsp 27</i></span>
+                        <span><i class="fas fa-comment-alt">&nbsp 0</i></span>
+                        <span><i class="fas fa-download">&nbsp 0</i></span>
+                    </div>
+                    <div class="card-profile">
+                        <img src="media/Omar.png" alt="perfil">
+                        <div class="card-profile-text">
+                            <h2>Abstract Design</h2>
+                            <p>by <b>@omargpax</b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="lock4">
+                    <div class="card-info">
+                        <span><i class="fas fa-eye">&nbsp 25</i></span>
+                        <span><i class="fas fa-comment-alt">&nbsp 0</i></span>
+                        <span><i class="fas fa-download">&nbsp 0</i></span>
+                    </div>
+                    <div class="card-profile">
+                        <img src="media/Omar.png" alt="perfil">
+                        <div class="card-profile-text">
+                            <h2>Abstract Design</h2>
+                            <p>by <b>@omargpax</b></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="card" id="lock2">
-            <div class="card-info">
-                <span><i class="fas fa-eye">&nbsp 32</i></span>
-                <span><i class="fas fa-comment-alt">&nbsp 0</i></span>
-                <span><i class="fas fa-download">&nbsp 0</i></span>
-            </div>
-            <div class="card-profile">
-                <img src="media/Omar.png" alt="perfil">
-                <div class="card-profile-text">
-                    <h2>Abstract Design</h2>
-                    <p>by <b>@omargpax</b></p>
-                </div>
-            </div>
-        </div>
-        <div class="card" id="lock3">
-            <div class="card-info">
-                <span><i class="fas fa-eye">&nbsp 27</i></span>
-                <span><i class="fas fa-comment-alt">&nbsp 0</i></span>
-                <span><i class="fas fa-download">&nbsp 0</i></span>
-            </div>
-            <div class="card-profile">
-                <img src="media/Omar.png" alt="perfil">
-                <div class="card-profile-text">
-                    <h2>Abstract Design</h2>
-                    <p>by <b>@omargpax</b></p>
-                </div>
-            </div>
-        </div>
-        <div class="card" id="lock4">
-            <div class="card-info">
-                <span><i class="fas fa-eye">&nbsp 25</i></span>
-                <span><i class="fas fa-comment-alt">&nbsp 0</i></span>
-                <span><i class="fas fa-download">&nbsp 0</i></span>
-            </div>
-            <div class="card-profile">
-                <img src="media/Omar.png" alt="perfil">
-                <div class="card-profile-text">
-                    <h2>Abstract Design</h2>
-                    <p>by <b>@omargpax</b></p>
+        <div class="category">
+            <div class="title">
+                <h2>Recientes</h2>
+                <div class="recientes">
+                    <div class="card" id="r1">
+                        <div class="card-info">
+                            <span><i class="fas fa-eye">&nbsp 15</i></span>
+                            <span><i class="fas fa-comment-alt">&nbsp 0</i></span>
+                            <span><i class="fas fa-download">&nbsp 0</i></span>
+                        </div>
+                    </div>
+                    <div class="card" id="r2">
+                        <div class="card-info">
+                            <span><i class="fas fa-eye">&nbsp 15</i></span>
+                            <span><i class="fas fa-comment-alt">&nbsp 0</i></span>
+                            <span><i class="fas fa-download">&nbsp 0</i></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -110,6 +145,15 @@
 
     <script src="js/script.js"></script>
     <script src="js/portafolio.js"></script>
+    <script src="js/cart.js"></script>
+    <script type="text/JavaScript">
+        function portafolio(){
+            window.location.href="/portafolio.html";
+        }
+        function index(){
+            window.location.href="/index.html";
+        }
+    </script>
 </body>
 
 </html>

@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-ES">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kundu - omargax</title>
-
+    <link rel="stylesheet" href="css/cart.css">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="media/kundu.png">
 </head>
 
 <body>
@@ -28,11 +29,16 @@
             <div class="menu">
                 <nav>
                     <ul>
-                        <li><a href="#">Productos</a></li>
+                        <li><a href="producto.html">Productos</a></li>
                         <li><a href="#">Tutoriales</a></li>
-                        <li><a href="https://omargpx.github.io/portafolio">Perfil</a></li>
-                        <li><a href="#">Recursos</a></li>
+                        <li><a href="https://omargpax.minisite.ai">Perfil</a></li>
                         <li><a href="https://omargpx.github.io/portafolio/info.html">Contactos</a></li>
+                        <li><a href="cart.html">
+                                <div class="cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <div id="cartAmount" class="cartAmount">0</div>
+                                </div>
+                            </a></li>
                     </ul>
                 </nav>
             </div>
@@ -113,6 +119,7 @@
         </div>
     </main>
     <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
     <script type="text/JavaScript">
         function portafolio(){
             window.location.href="/portafolio.html";

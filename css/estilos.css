@@ -50,10 +50,9 @@ header {
 
 .container__header {
   max-width: 1200px;
-  height: 100%;
   margin: auto;
   padding: 40px;
-  padding-top: 80px;
+  padding-top: 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -170,12 +169,14 @@ main {
 /*BANNER*/
 
 .container__banner {
+  max-width: 1200px;
   margin-top: 15%;
   background: #121214;
   border-radius: 2rem;
 }
 
 .banner {
+  max-width: 1200px;
   height: 260px;
   display: flex;
   align-items: center;
