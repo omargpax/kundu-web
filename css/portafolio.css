@@ -2,6 +2,7 @@ header{
     z-index: 2;
 }
 .content{
+    height: max-content;
     margin-top: 2%;
     width: 100%;
     display: flex;
@@ -147,10 +148,7 @@ header{
     }
 }
 @media (max-width: 600px){
-    
-    .title{
-        display: none;
-    }
+  
     .destacados, .recientes{
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto; 
